@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting title</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .left {
+        width: 130px;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-right: 1px solid gray;
+    }
+    
+    .left .left_top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .left .left_bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .item {
+        width: 40px;
+        margin-top: 35px;
+    }
+    
+    #setting {
+        margin: 30px 0;
+    }
+    
+    .center {
+        /* background-color: green; */
+        width: 920px;
+        border-right: 1px solid gray;
+    }
+    
+    .center .center_title {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 38px;
+        align-items: center;
+    }
+    
+    .center_title input {
+        border-radius: 15px;
+        padding: 0;
+        border: 1px solid red;
+        outline: none;
+        color: red;
+        background: none;
+        height: 33px;
+        width: 93px;
+        margin-right: 40px;
+    }
+    
+    .center_menu {
+        display: flex;
+        width: 365px;
+        height: 35px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .center_menu_left {
+        display: flex;
+    }
+    
+    .center_menu_left img {
+        width: 16px;
+        height: 15px;
+    }
+    
+    .center_menu_left a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .center_menu_center {
+        display: flex;
+        border-right: 1px solid gray;
+        align-items: center;
+        height: 15px;
+        padding-right: 10px;
+    }
+    
+    .center_menu_center img {
+        width: 16px;
+    }
+    
+    .center_colum1 {
+        position: relative;
+    }
+    
+    .center_colum1 img {
+        position: relative;
+        width: 880px;
+        height: 455px;
+    }
+    
+    .center_colum1_abs {
+        position: absolute;
+    }
+    /* .center_colum1 input {
+        position: absolute;
+        margin-left: 25px;
+    } */
+    
+    .center_colum1_abs input {}
+    
+    .right {
+        background-color: hotpink;
+        width: 400px;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="left">
+                <div class="left_top">
+                    <img class="item" src="anh/logo.png" alt="">
+                    <img class="item" src="anh/home.png" alt="">
+                    <img class="item" src="anh/chatting.png" alt="">
+                    <img class="item" src="anh/calender.png" alt="">
+                    <img class="item" src="anh/cam.png" alt="">
+                    <img class="item" src="anh/user.png" alt="">
+                </div>
+                <div class="left_bottom">
+                    <img src="anh/avatar.png" alt="">
+                    <img id="setting" src="anh/setting.png" alt="">
+                </div>
+            </div>
+            <div class="center">
+                <div class="center_title">
+                    <h2>Meeting title</h2>
+                    <input type="submit" name="" id="" value="12:00">
+                </div>
+                <div class="center_menu">
+                    <div class="center_menu_left">
+                        <img src="anh/user.png" alt="">
+                        <a href="#">Internal</a>
+                    </div>
+                    <div class="center_menu_center">
+                        <img src="anh/calender_small.png" alt="">
+                        <p>Sep 02, 2022</p>
+                    </div>
+                    <p>08:00 - 09:00 AM</p>
+                </div>
+                <div class="center_colum1">
+                    <img src="anh/img_big.png" alt="">
+                    <div class="center_colum1_abs">
+                        <input type="submit" name="" id="" value="Benjamin Crawford">
+                        <img src="anh/mic_color.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div class="right">
+                right
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
