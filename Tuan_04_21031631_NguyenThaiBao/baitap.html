@@ -57,28 +57,39 @@
     }
     
     .center {
-        /* background-color: green; */
         width: 920px;
         border-right: 1px solid gray;
+        margin-left: 40px;
     }
-    
     .center .center_title {
         display: flex;
         justify-content: space-between;
         margin-top: 38px;
         align-items: center;
+        position: relative;
     }
-    
-    .center_title input {
+    .center_title_one {
+        position: relative;
+    }
+    .center_title_one input {
         border-radius: 15px;
-        padding: 0;
+        padding-left: 20px;
+        padding-right: 0;
         border: 1px solid red;
         outline: none;
         color: red;
         background: none;
-        height: 33px;
+        height: 40px;
         width: 93px;
         margin-right: 40px;
+        font-size: 18px;
+    }
+    .center_title_one img {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 15px;
+        left: 14px;
     }
     
     .center_menu {
@@ -114,27 +125,118 @@
     .center_menu_center img {
         width: 16px;
     }
-    
-    .center_colum1 {
+    /*.center_colum1 {
         position: relative;
-    }
-    
-    .center_colum1 img {
+    }*/
+    .center_colum1_box {
         position: relative;
-        width: 880px;
+        width: 900px;
         height: 455px;
+        
     }
-    
+    .center_colum1_img_big {
+        width: 880px;
+        border-radius: 5px;
+    }
     .center_colum1_abs {
         position: absolute;
+        top: 20px;
+        left: 20px;
     }
-    /* .center_colum1 input {
+    .center_colum1_box_img {
         position: absolute;
-        margin-left: 25px;
-    } */
-    
-    .center_colum1_abs input {}
-    
+        top: 16px;
+        right: 45px;
+    } 
+    .center_colum1_abs_one  {
+        position: relative;
+    }
+    .center_colum1_abs_one img {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 15px;
+        left: 5px;
+    }
+    .center_colum1_abs .center_colum1_abs_one input {
+        width: 160px;
+        height: 40px;
+        background: rgb(126, 125, 125);
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    /*menu 2*/
+    .center_menu_2 {
+        display: grid;
+        margin-top: 55px;
+        margin-right: 35px;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(1, auto);
+        justify-content: space-between;
+    }
+    .center_menu_2_people_box {
+        position: relative;
+    }
+    .center_menu_2_people_box .box_card {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .center_menu_2_people_box .box_img_big {
+        border-radius: 5px;
+    }
+    .center_menu_2_people_box .box_img_small {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .center_menu_2_people_box .box_img_small img {
+        width: 28px;
+        height: 27px;
+    }
+    .box_card .box_card_one {
+        position: relative;
+    }
+    .box_card .box_card_one img {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        top: 8px;
+        left: 7px;
+    }
+    .box_card .box_card_one input {
+        background: #8c8989;
+        border: none;
+        color: #fff;
+        width: 105px;
+        height: 27px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding-left: 12px;
+        padding-right: 0;
+    }
+    /*menu 3*/
+    .center_menu_3 {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 200px;
+    }
+    .center_menu_3 input {
+        width: 125px;
+        height: 44px;
+        background: red;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        font-family: monospace;
+    }
     .right {
         background-color: hotpink;
         width: 400px;
@@ -161,7 +263,11 @@
             <div class="center">
                 <div class="center_title">
                     <h2>Meeting title</h2>
-                    <input type="submit" name="" id="" value="12:00">
+                    <div class="center_title_one">
+                        <input type="submit" name="" id="" value="12:00">
+                        <img src="anh/cricle_red.png" alt="">
+                    </div>
+                    
                 </div>
                 <div class="center_menu">
                     <div class="center_menu_left">
@@ -175,12 +281,71 @@
                     <p>08:00 - 09:00 AM</p>
                 </div>
                 <div class="center_colum1">
-                    <img src="anh/img_big.png" alt="">
-                    <div class="center_colum1_abs">
-                        <input type="submit" name="" id="" value="Benjamin Crawford">
-                        <img src="anh/mic_color.png" alt="">
+                    <div class="center_colum1_box">
+                        <img class="center_colum1_img_big" src="anh/img_big.png" alt="">
+                        <div class="center_colum1_abs">
+                            <div class="center_colum1_abs_one">
+                                <input type="submit" name="" id="" value="Benjamin Crawford">
+                                <img src="anh/icons8-circle-24.png" alt="">
+                            </div>
+                        </div>
+                        <div class="center_colum1_box_img">
+                            <img src="anh/mic_color.png" alt="">
+                        </div>
                     </div>
-
+                </div>
+                <div class="center_menu_2">
+                    <div class="center_menu_2_people">
+                        <div class="center_menu_2_people_box">
+                            <img class="box_img_big" src="anh/img2.png" alt="">
+                            <div class="box_card">
+                                <div class="box_card_one">
+                                    <input type="submit" name="" id="" value="Christian Scott">
+                                    <img src="anh/icons8-circle-24.png" alt="">
+                                </div>
+                            </div>
+                            <div class="box_img_small">
+                                <img src="anh/mic_grey_color.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center_menu_2_people">
+                        <div class="center_menu_2_people_box">
+                            <img class="box_img_big" src="anh/img1.png" alt="">
+                            <div class="box_card">
+                                <div class="box_card_one">
+                                    <input type="submit" name="" id="" value="Deborah Chu">
+                                    <img src="anh/icons8-circle-24.png" alt="">
+                                </div>
+                            </div>
+                            <div class="box_img_small">
+                                <img src="anh/mic_grey_color.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center_menu_2_people">
+                        <div class="center_menu_2_people_box">
+                            <img class="box_img_big" src="anh/img.png" alt="">
+                            <div class="box_card">
+                                <div class="box_card_one">
+                                    <input type="submit" name="" id="" value="Jordan Nieves">
+                                    <img src="anh/icons8-circle-24.png" alt="">
+                                </div>
+                            </div>
+                            <div class="box_img_small">
+                                <img src="anh/mic_grey_color.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center_menu_3">
+                    <img src="anh/mic_grey_color.png" alt="">
+                    <img src="anh/cam_color.png" alt="">
+                    <img src="anh/speaker_grey_color.png" alt="">
+                    <input type="submit" name="" id="" value="End meeting">
+                    <img src="anh/Button 2179.png" alt="">
+                    <img src="anh/share.png" alt="">
+                    <img src="anh/Cham.png" alt="">
                 </div>
             </div>
             <div class="right">
