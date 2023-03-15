@@ -25,12 +25,12 @@
     }
     
     .left {
-        width: 130px;
+        width: 120px;
         height: 900px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border-right: 1px solid gray;
+        border-right: 2px solid rgb(204, 203, 203);
     }
     
     .left .left_top {
@@ -57,12 +57,13 @@
     }
     
     .center {
-        width: 920px;
-        border-right: 1px solid gray;
+        width: 860px;
+        border-right: 2px solid rgb(204, 203, 203);
         margin-left: 40px;
     }
     .center .center_title {
         display: flex;
+        height: 45px;
         justify-content: space-between;
         margin-top: 38px;
         align-items: center;
@@ -116,7 +117,7 @@
     
     .center_menu_center {
         display: flex;
-        border-right: 1px solid gray;
+        border-right: 2px solid rgb(204, 203, 203);
         align-items: center;
         height: 15px;
         padding-right: 10px;
@@ -130,13 +131,14 @@
     }*/
     .center_colum1_box {
         position: relative;
-        width: 900px;
+        width: 820px;
         height: 455px;
         
     }
     .center_colum1_img_big {
-        width: 880px;
+        width: 780px;
         border-radius: 5px;
+        height: 460px;
     }
     .center_colum1_abs {
         position: absolute;
@@ -146,7 +148,7 @@
     .center_colum1_box_img {
         position: absolute;
         top: 16px;
-        right: 45px;
+        right: 55px;
     } 
     .center_colum1_abs_one  {
         position: relative;
@@ -173,7 +175,7 @@
     /*menu 2*/
     .center_menu_2 {
         display: grid;
-        margin-top: 55px;
+        margin-top: 40px;
         margin-right: 35px;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(1, auto);
@@ -225,7 +227,7 @@
     .center_menu_3 {
         display: flex;
         justify-content: space-between;
-        margin: 20px 200px;
+        margin: 20px 175px 0;
     }
     .center_menu_3 input {
         width: 125px;
@@ -237,9 +239,143 @@
         font-size: 16px;
         font-family: monospace;
     }
+    /*right*/
     .right {
-        background-color: hotpink;
-        width: 400px;
+        width: 700px;
+    }
+    .right_title_menu .title {
+        display: flex;
+        justify-content: space-between;
+        height: 45px;
+        margin: 40px 40px 0 25px;
+        align-items: center;
+        
+    }
+    .right_title_menu .title .title_left {
+        display: flex;
+        align-items: center;
+    }
+    .right_title_menu .title input {
+        width: 70px;
+        height: 35px;
+        background: none;
+        color: red;
+        border-radius: 5px;
+        border: 1px solid red;
+    }
+    .right_title_menu .title_left input {
+        margin-left: 10px;
+        border-radius: 100px;
+        width: 23px;
+        height: 25px;
+        background: rgb(248, 220, 220);
+        border: none;
+    }
+    .menu_grid {
+        border-bottom: 2px solid rgb(204, 203, 203);
+        margin-right: 40px;
+        height: 230px;
+    }
+    .menu_grid_one {
+        display: flex;
+        margin: 8px 0 8px 25px;
+        height: 45px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu_grid_one .menu_grid_one_left {
+        display: flex;
+        align-items: center;
+    }
+    .menu_grid_one .menu_grid_one_left img {
+        width: 38px;
+        height: 38px;
+        margin-right: 10px;
+    }
+    .menu_grid_one .menu_grid_one_left p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #3b3b3b;
+    }
+    .menu_grid_one_right .one_right_3 {
+        width: 16px;
+        padding-bottom: 2px;
+    }
+    .menu_grid_one_right img {
+        margin-left: 5px;
+    }
+    /*right_chat*/
+    .right_chat {
+        margin-left: 25px;
+    }
+    .right_chat h2 {
+        margin: 34px 0;
+    }
+    .right_chat_one .right_chat_one_avatar,
+    .right_chat_two_avatar {
+        display: flex;
+        width: 300px;
+        height: 40px;
+        align-items: center;
+    }
+    .right_chat_one .right_chat_one_avatar p,
+    .right_chat_two_avatar p {
+        margin-left: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 14px;
+    }
+    .right_chat_one_avatar .Gio {
+        color: rgb(190, 191, 192);
+    }
+    .right_chat_one_comment {
+        width: 340px;
+        height: 65px;
+        margin: 0 48px 20px;
+        background-color: rgb(245, 246, 247);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 20px;
+        border-radius: 3px;
+    }
+    .right_chat_one_comment p {
+        padding-left: 10px;
+        padding-top: 12px;
+        margin: 0;
+    }
+    .right_chat_one_comment_img {
+        width: 105px;
+        height: 45px;
+        background-color: rgb(248, 221, 234);
+        text-align: center;
+        border-radius: 3px;
+        margin: 0 48px 20px;
+    }
+    .right_chat_one_comment_img img {
+        width: 25px;
+        padding-top: 10px;
+    }
+    .right_chat_two_commet {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        margin-right: 70px;
+    }
+    .right_chat_two_commet input {
+        position: relative;
+        width: 280px;
+        height: 45px;
+        background-color: rgb(245, 246, 247);
+        border: none;
+        padding-left: 20px;
+        border-radius: 5px;
+    }
+    .right_chat_two_commet .two_commet_img {
+        position: absolute;
+        width: 25px;
+        top: 16px;
+        right: 144px;
+    }
+    .right_chat_two_commet .two_commet_img img {
+        width: 20px;
+        
     }
 </style>
 
@@ -349,7 +485,109 @@
                 </div>
             </div>
             <div class="right">
-                right
+                <div class="right_title_menu">
+                    <div class="title">
+                        <div class="title_left">
+                            <h2>Participants</h2>
+                            <input type="submit" name="" id="" value="4">
+                        </div>
+                        <input type="submit" name="" id="" value="+ Add">
+                    </div>
+                    <div class="menu_grid">
+                        <div class="menu_grid_one">
+                            <div class="menu_grid_one_left">
+                                <img src="anh/avatar 1322.png" alt="">
+                                <p>Benjamin Crawford</p>
+                            </div>
+                            <div class="menu_grid_one_right">
+                                <img src="anh/mic1.png" alt="">
+                                <img src="anh/cam_small.png" alt="">
+                                <img class="one_right_3" src="anh/icons8-ellipsis-30.png" alt="">
+                            </div>
+                        </div>
+                        <div class="menu_grid_one">
+                            <div class="menu_grid_one_left">
+                                <img src="anh/avatar 1323.png" alt="">
+                                <p>Christian Scott</p>
+                            </div>
+                            <div class="menu_grid_one_right">
+                                <img src="anh/mic1.png" alt="">
+                                <img src="anh/cam_small.png" alt="">
+                                <img class="one_right_3" src="anh/icons8-ellipsis-30.png" alt="">
+                            </div>
+                        </div>
+                        <div class="menu_grid_one">
+                            <div class="menu_grid_one_left">
+                                <img src="anh/avatar 1324.png" alt="">
+                                <p>Deborah Chu</p>
+                            </div>
+                            <div class="menu_grid_one_right">
+                                <img src="anh/mic2.png" alt="">
+                                <img src="anh/cam_small.png" alt="">
+                                <img class="one_right_3" src="anh/icons8-ellipsis-30.png" alt="">
+                            </div>
+                        </div>
+                        <div class="menu_grid_one">
+                            <div class="menu_grid_one_left">
+                                <img src="anh/avatar 1325.png" alt="">
+                                <p>Jordan Nieves</p>
+                            </div>
+                            <div class="menu_grid_one_right">
+                                <img src="anh/mic1.png" alt="">
+                                <img src="anh/cam_small.png" alt="">
+                                <img class="one_right_3" src="anh/icons8-ellipsis-30.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_chat">
+                    <h2>Chat</h2>
+                    <div class="right_chat_one">
+                        <div class="right_chat_one_avatar">
+                            <img src="anh/avatar 1326.png" alt="">
+                            <p><b>Deborah Chu</b></p>
+                            <p class="Gio">1:12 PM</p>
+                        </div>
+                        <div class="right_chat_one_comment">
+                            <p>Lorem excepteur magna voluptate exercitation dolore exercitation amet</p>
+                        </div>
+                    </div>
+                    <div class="right_chat_one">
+                        <div class="right_chat_one_avatar">
+                            <img src="anh/avatar 1327.png" alt="">
+                            <p><b>Jordan Nieves</b></p>
+                            <p class="Gio">1:12 PM</p>
+                        </div>
+                        <div class="right_chat_one_comment">
+                            <p>Eiusmod laborum culpa est magna cillum sint in elit proident magna anim consecte</p>
+                        </div>
+                    </div>
+                    <div class="right_chat_one">
+                        <div class="right_chat_one_avatar">
+                            <img src="anh/avatar 1328.png" alt="">
+                            <p><b>Benjamin Crawford</b></p>
+                            <p class="Gio">1:12 PM</p>
+                        </div>
+                        <div class="right_chat_one_comment_img">
+                            <img src="anh/icons8-smiling-face-with-hearts-20.png" alt="">
+                            <img src="anh/icons8-smiling-face-with-hearts-20.png" alt="">
+                            <img src="anh/icons8-smiling-face-with-hearts-20.png" alt="">
+                        </div>
+                    </div>
+                    <div class="right_chat_two">
+                        <div class="right_chat_two_avatar">
+                            <img src="anh/avatar 1329.png" alt="">
+                            <p><b>Christian Scott</b></p>
+                        </div>
+                        <div class="right_chat_two_commet">
+                            <input type="text" name="" id="" placeholder="Add Typing...">
+                            <img src="anh/send.png" alt="">
+                            <div class="two_commet_img">
+                                <img src="anh/icons8-happy-50.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
