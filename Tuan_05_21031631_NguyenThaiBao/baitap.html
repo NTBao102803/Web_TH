@@ -10,7 +10,6 @@
 <style>
     body {
         margin: 0;
-        
     }
     
     a {
@@ -20,9 +19,12 @@
     
     .header {
         display: flex;
+        width: 1400px;
+        height: 55px;
+        margin: 25px 150px 0 30px;
         justify-content: space-between;
-        margin-top: 25px;
-        border-bottom: 1px solid gray;
+        /*margin-top: 25px;*/
+        border-bottom: 1px solid rgb(181, 184, 184);
     }
     
     .header_left {
@@ -49,7 +51,7 @@
     
     .header_right {
         display: flex;
-        margin-right: 150px;
+        /*margin-right: 150px;*/
         width: 500px;
         height: 60px;
     }
@@ -172,7 +174,7 @@
         /* justify-content: space-between; */
         justify-content: space-around;
     }
-    
+    /*Center_Characteristic*/
     .Center_Characteristic {
         width: 1200px;
         height: 425px;
@@ -268,6 +270,54 @@
         top: 10px;
         left: 85px;
     }
+    /*Center_reviews*/
+    .Center_reviews {
+        width: 1200px;
+        height: 340px;
+        margin-left: 140px;
+        margin-top: 30px;
+        border-bottom: 1px solid rgb(181, 184, 184);
+    }
+    .reviews_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .reviews_title_left {
+        display: flex;
+        align-items: center;
+    }
+    .reviews_title_left > span > b {
+        margin: 0 5px;
+    }
+    .reviews_title_right select {
+        width: 150px;
+        height: 30px;
+        background-color: #e9e7e7;
+        color: rgb(181, 184, 184);
+        border: none;
+        border-radius: 5px;
+    }
+    .reviews_content {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        justify-content: space-between;
+    }
+    .content_people {
+        width: 501px;
+        height: 130px;
+    }
+    .content_people_title {
+        display: flex;
+    }
+    .people_name {
+        margin: 0 10px;
+    }
+    .content_people_title .people_name p {
+        margin: 0;
+        padding-bottom: 5px;
+    }
 </style>
 
 <body>
@@ -314,7 +364,7 @@
             <div class="Center_Evaluate_left">
                 <img src="anh/Rating 303.png" alt="">
                 <h4>4.2D</h4>
-                <p>(99 reviews)</p>
+                <p style="color: rgb(181, 184, 184);">(99 reviews)</p>
             </div>
             <div class="Center_Evaluate_right">
                 <div class="Center_Evaluate_right_one">
@@ -325,8 +375,6 @@
                     <img src="anh/Heart 23.png" alt="">
                     <p>Save</p>
                 </div>
-
-
             </div>
         </div>
         <div class="Center_img">
@@ -411,6 +459,147 @@
                         <img src="anh/icons8-shopping-cart-32.png" alt="">
                     </div>
                 </fieldset>
+            </div>
+        </div>
+        <div class="Center_reviews">
+            <div class="reviews_title">
+                <div class="reviews_title_left">
+                    <h2 style="font-size: 25px; font-family: sans-serif; margin-right: 5px;">Reviews</h2>
+                    <img width="20" height="20" src="anh/Rating 304.png" alt="">
+                    <span><b>4.2D</b></span>
+                    <span style="color: rgb(181, 184, 184);">(99 reviews)</span>
+                </div>
+                <div class="reviews_title_right">
+                    <select name="" id="">
+                        <option value="">Show all reviews</option>
+                    </select>
+                </div>
+            </div>
+            <div class="reviews_content">
+                <div class="content_people">
+                    <div class="content_people_title">
+                        <img src="anh/Avatar 753.png" alt="">
+                        <div class="people_name">
+                            <p><b>Jay Rutherford</b></p>
+                            <img src="anh/Rating 300.png" alt="">
+                        </div>
+                        <span style="color: rgb(181, 184, 184);">3d ago</span>
+                    </div>
+                    <div class="content_people_comment">
+                        <p>Nulla laboris fugiat fugiat minim minim excepteur eiusmod quis. 
+                            Laborum est minim id cillum nostrud cillum consectetur</p>
+                    </div>
+                </div>
+                <div class="content_people">
+                    <div class="content_people_title">
+                        <img src="anh/Avatar 756.png" alt="">
+                        <div class="people_name">
+                            <p><b>Nicole Chung</b></p>
+                            <img src="anh/Rating 305.png" alt="">
+                        </div>
+                        <span style="color: rgb(181, 184, 184);">3d ago</span>
+                    </div>
+                    <div class="content_people_comment">
+                        <p>Proident ullamco minim quis aliquip eiusmod in deserunt sit aliqua. 
+                            adipisicing reprehenderit elit officia occaecat dolor.</p>
+                    </div>
+
+                </div>
+                <div class="content_people">
+                    <div class="content_people_title">
+                        <img src="anh/Avatar 755.png" alt="">
+                        <div class="people_name">
+                            <p><b>Wei Arnold</b></p>
+                            <img src="anh/Rating 317.png" alt="">
+                        </div>
+                        <span style="color: rgb(181, 184, 184);">3d ago</span>
+                    </div>
+                    <div class="content_people_comment">
+                        <p>Ut commodo quis sit in consequat sit nisi dolor adipisicing officia tempor 
+                            do duis consequat dolore dolore ipsum.</p>
+                    </div>
+
+                </div>
+                <div class="content_people">
+                    <div class="content_people_title">
+                        <img src="anh/Avatar 757.png" alt="">
+                        <div class="people_name">
+                            <p><b>Judith Mejia</b></p>
+                            <img src="anh/Rating 299.png" alt="">
+                        </div>
+                        <span style="color: rgb(181, 184, 184);">3d ago</span>
+                    </div>
+                    <div class="content_people_comment">
+                        <p>Ad laborum dolor cupidatat culpa mollit non non sunt qui. 
+                            In ut et aute mollit eiusmod occaecat eiusmod mi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Center_related">
+            <div class="related_title">
+                <h2>Related products</h2>
+                <select name="" id="">
+                    <option value="">See more</option>
+                </select>
+            </div>
+            <div class="related_menu">
+                <div class="menu_content">
+                    <img src="anh/Image 1704.png" alt="">
+                    <div class="menu_content_items">
+                        <div class="content_items_title">
+                            <h3>Product title</h3>
+                            <img src="anh/Heart 23.png" alt="">
+                        </div>
+                        <span>$230</span>
+                        <div class="content_items_Star">
+                            <img src="anh/Rating 300.png" alt="">
+                            <span>1000 items sold</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_content">
+                    <img src="anh/Image 1704.png" alt="">
+                    <div class="menu_content_items">
+                        <div class="content_items_title">
+                            <h3>Product title</h3>
+                            <img src="anh/Heart 23.png" alt="">
+                        </div>
+                        <span>$230</span>
+                        <div class="content_items_Star">
+                            <img src="anh/Rating 300.png" alt="">
+                            <span>1000 items sold</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_content">
+                    <img src="anh/Image 1704.png" alt="">
+                    <div class="menu_content_items">
+                        <div class="content_items_title">
+                            <h3>Product title</h3>
+                            <img src="anh/Heart 23.png" alt="">
+                        </div>
+                        <span>$230</span>
+                        <div class="content_items_Star">
+                            <img src="anh/Rating 300.png" alt="">
+                            <span>1000 items sold</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu_content">
+                    <img src="anh/Image 1704.png" alt="">
+                    <div class="menu_content_items">
+                        <div class="content_items_title">
+                            <h3>Product title</h3>
+                            <img src="anh/Heart 23.png" alt="">
+                        </div>
+                        <span>$230</span>
+                        <div class="content_items_Star">
+                            <img src="anh/Rating 300.png" alt="">
+                            <span>1000 items sold</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
