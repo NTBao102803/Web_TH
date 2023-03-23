@@ -118,7 +118,7 @@
         height: 20px;
         align-items: center;
         justify-content: space-between;
-        margin: 0 260px 0 140px;
+        margin: 0 180px 0 140px;
     }
     
     .Center_Evaluate_left {
@@ -154,17 +154,20 @@
     
     .Center_img {
         display: flex;
-        width: 1600px;
+        width: 1200px;
         margin-top: 20px;
-        margin-right: 260px;
+        margin-left: 140px;
+        margin-right: 200px;
     }
     
     .Center_img_left {
         width: 590px;
         height: 430px;
-        margin-left: 140px;
     }
-    
+    .Center_img_left img {
+        width: 580px;
+        height: 424px;
+    }
     .Center_img_right {
         display: grid;
         width: 590px;
@@ -317,6 +320,166 @@
     .content_people_title .people_name p {
         margin: 0;
         padding-bottom: 5px;
+    }
+    /*Center_related*/
+    .Center_related {
+        width: 1200px;
+        height: 500px;
+        margin-left: 140px;
+        margin-top: 30px;
+        border-bottom: 1px solid rgb(181, 184, 184);
+    }
+    .Center_related .related_title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .related_title select {
+        width: 150px;
+        height: 30px;
+        background-color: #e9e7e7;
+        color: rgb(181, 184, 184);
+        border: none;
+        border-radius: 5px;
+    }
+    .related_menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .related_menu .menu_content {
+        border: 1px solid rgb(181, 184, 184);
+        border-radius: 5px;
+    }
+    .menu_content > img {
+        border: 1px solid rgb(181, 184, 184);
+        border-radius: 5px 5px 0 0;
+    }
+    .menu_content .content_items_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 16px 15px 8px;
+    }
+    .content_items_title > img {
+        width: 25px;
+        height: 25px;
+    }
+    .content_items_title h3 {
+        margin: 0;
+    }
+    .menu_content_items > span {
+        color: aqua;
+        font-family: sans-serif;
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .menu_content_items .content_items_Star {
+        margin: 8px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content_items_Star > img {
+        width: 80px;
+        height: 25px;
+    }
+    .content_items_Star p {
+        margin: 0;
+        color: rgb(181, 184, 184);
+    }
+    /*footer*/
+    .footer_top {
+        text-align: center;
+        margin-top: 65px;
+    }
+    .footer_top h2 {
+        font-family: sans-serif;
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    .footer_top_input_text input[type="text"] {
+        width: 265px;
+        height: 35px;
+        padding-left: 45px;
+        border: none;
+        background-color: #e9e7e7;
+        border-radius: 3px;
+    }
+    .footer_top_input input[type="submit"] {
+        width: 115px;
+        height: 35px;
+        background-color: rgb(4, 183, 183);
+        border: none;
+        color: #fff;
+        font-family: sans-serif;
+        border-radius: 3px;
+    }
+    .footer_top_input_text {
+        position: relative;
+    }
+    .footer_top_input {
+        display: flex;
+        justify-content: center;
+    }
+    .footer_top_input_text .img_mail {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 7px;
+        left: 15px;
+    }
+    /*footer_center*/
+    .footer_center {
+        text-align: -webkit-center;
+        margin-top: 60px;
+    }
+    .center_one {
+        display: flex;
+        width: 725px;
+        justify-content: space-between;
+    }
+    .center_one .center_menu h2 {
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+    .center_one .center_menu ul {
+        list-style: none;
+        text-align: left;
+        padding: 0;
+    }
+    .center_one .center_menu ul li {
+        padding: 8px 0;
+    }
+    /*footer_bottom*/
+    .footer_bottom {
+        display: flex;
+        width: 1200px;
+        margin-left: 140px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer_bottom .bottom_center {
+        display: flex;
+        color: rgb(181, 184, 184);
+    }
+    .footer_bottom .bottom_center ul {
+        display: flex;
+        gap: 30px;
+    }
+    .footer_bottom .bottom_center ul a {
+        color: rgb(181, 184, 184);
+    }
+    .footer_bottom .bottom_opt select {
+        width: 130px;
+        height: 35px;
+        border: none;
+        border-radius: 3px;
+        background-color: #e9e7e7;
+    }
+    .footer_bottom .bottom_right img {
+        margin: 0 5px;
     }
 </style>
 
@@ -554,52 +717,122 @@
                         <span>$230</span>
                         <div class="content_items_Star">
                             <img src="anh/Rating 300.png" alt="">
-                            <span>1000 items sold</span>
+                            <p>1000 items sold</p>
                         </div>
                     </div>
                 </div>
                 <div class="menu_content">
-                    <img src="anh/Image 1704.png" alt="">
+                    <img src="anh/Image 1703.png" alt="">
                     <div class="menu_content_items">
                         <div class="content_items_title">
                             <h3>Product title</h3>
                             <img src="anh/Heart 23.png" alt="">
                         </div>
-                        <span>$230</span>
+                        <span>$199</span>
                         <div class="content_items_Star">
-                            <img src="anh/Rating 300.png" alt="">
-                            <span>1000 items sold</span>
+                            <img src="anh/Rating 299.png" alt="">
+                            <p>765 items sold</p>
                         </div>
                     </div>
                 </div>
                 <div class="menu_content">
-                    <img src="anh/Image 1704.png" alt="">
+                    <img src="anh/Image 1711.png" alt="">
                     <div class="menu_content_items">
                         <div class="content_items_title">
                             <h3>Product title</h3>
                             <img src="anh/Heart 23.png" alt="">
                         </div>
-                        <span>$230</span>
+                        <span>$299</span>
                         <div class="content_items_Star">
-                            <img src="anh/Rating 300.png" alt="">
-                            <span>1000 items sold</span>
+                            <img src="anh/Rating 303.png" alt="">
+                            <p>360 items sold</p>
                         </div>
                     </div>
                 </div>
                 <div class="menu_content">
-                    <img src="anh/Image 1704.png" alt="">
+                    <img src="anh/Image 1712.png" alt="">
                     <div class="menu_content_items">
                         <div class="content_items_title">
                             <h3>Product title</h3>
                             <img src="anh/Heart 23.png" alt="">
                         </div>
-                        <span>$230</span>
+                        <span>$99</span>
                         <div class="content_items_Star">
-                            <img src="anh/Rating 300.png" alt="">
-                            <span>1000 items sold</span>
+                            <img src="anh/Rating 305.png" alt="">
+                            <p>234 items sold</p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_top">
+            <img style="width: 130px; height: 40;" src="anh/Image 1713.png" alt="">
+            <h2>Subscribe to our newsletter</h2>
+            <div class="footer_top_input">
+                <div class="footer_top_input_text">
+                    <input type="text" name="" id="" placeholder="Input your email" >
+                    <img class="img_mail" src="anh/icons8-mail-32.png" alt="">
+                </div>
+                <input type="submit" name="" id="" value="Subscribe">
+            </div>
+        </div>
+        <div class="footer_center">
+            <div class="center_one">
+                <div class="center_menu">
+                    <h2>Product</h2>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="center_menu">
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">User guides</a></li>
+                        <li><a href="#">Webinars</a></li>
+                    </ul>
+                </div>
+                <div class="center_menu">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#"></a>Contact us</li>
+                    </ul>
+                </div>
+                <div class="center_menu">
+                    <h2>Plans & Pricing</h2>
+                    <ul>
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">Start up</a></li>
+                        <li><a href="#">Organization</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="bottom_opt">
+                <select name="" id="">
+                    <option value="English">
+                        English
+                    </option>
+                </select>
+            </div>
+            <div class="bottom_center">
+                <p>© 2022 Brand, Inc.</p>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="bottom_right">
+                <img src="anh/Twitter 9.png" alt="">
+                <img src="anh/Facebook 9.png" alt="">
+                <img src="anh/LinkedIn 8.png" alt="">
+                <img src="anh/YouTube 8.png" alt="">
             </div>
         </div>
     </div>
