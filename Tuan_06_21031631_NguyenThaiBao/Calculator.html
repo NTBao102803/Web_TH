@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Calculator</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #calc {
+        width: 400px;
+        height: 520px;
+        border: 1px solid #ccc;
+        background-color: #e3e0e0;
+        box-shadow: 1px 1px 5px #ccc;
+        font-size: 16px;
+        margin-top: 50px;
+        margin-left: 50px;
+        border-radius: 7px;
+    }
+    .menu,
+    .header {
+        display: flex;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    .menu_left,
+    .header_left {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .menu_right,
+    .header_right {
+        margin-right: 10px;
+    }
+    .header_right button {
+        width: 30px;
+        outline: none;
+        background: none;
+        border: none;
+    }
+    .menu button {
+        width: 30px;
+        outline: none;
+        background: none;
+        border: none;
+    }
+    .Content input{
+        width: 100%;
+        height: 20px;
+        font-size: 16px;
+        text-align: right;
+        outline: none;
+        border: none;
+        background: none;
+    }
+    input.ketqua {
+        height: 40px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(5, auto);
+        margin-top: 20px;
+        height: 370px;
+        width: 400px;
+        justify-content: space-around;
+    }
+    .cards > button,
+    .cards input {
+        width: 90px;
+        height: 70px;
+        border-radius: 5px;
+        border: none;
+        font-size: 20px;
+        background-color: #fff;
+    }
+    .cards > button:hover,
+    .cards input:hover {
+        background-color: rgba(201, 200, 200, 0.91);
+    }
+    input.dauBang {
+        background-color: blue;
+        color: #fff;
+    }
+    input.dauBang:hover {
+        background-color: rgba(4, 166, 253, 0.91);
+    }
+</style>
+<body>
+    <div id="calc">
+        <div class="header">
+            <div class="header_left">
+                <i class="fa-solid fa-calculator"></i>
+                <p style="margin: 0; margin-left: 10px;">Calculator</p>
+            </div>
+            <div class="header_right">
+                <button><i class="fa-solid fa-minus"></i></button>
+                <button><i class="fa-regular fa-square"></i></button>
+                <button><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu_left">
+                <button><i class="fa-solid fa-bars"></i></button>
+                <h3 style="margin: 0; margin-left: 10px;">Standard</h3>
+            </div>
+            <div class="menu_right">
+                <button><i class="fa-solid fa-clock-rotate-left"></i></button>
+            </div>
+        </div>
+        <div class="Content">
+            <input type="text" name="" id="storage" disabled>
+            <input class="ketqua" type="text" name="" id="display" disabled value="0">
+        </div>
+        <div class="cards" >
+            <input type="button" name="" id="" value="%">
+            <input type="button" name="" id="" value="CE">
+            <input type="button" name="" id="" value="C" onclick="clearDisplay()">
+            <button><i class="fa-solid fa-delete-left"></i></button>
+            <input type="button" name="" id="" value="7" onclick="addNumber(7)">
+            <input type="button" name="" id="" value="8" onclick="addNumber(8)">
+            <input type="button" name="" id="" value="9" onclick="addNumber(9)">
+            <input type="button" name="" id="" value="/" onclick="setOperator('/')">
+            <input type="button" name="" id="" value="4" onclick="addNumber(4)">
+            <input type="button" name="" id="" value="5" onclick="addNumber(5)">
+            <input type="button" name="" id="" value="6" onclick="addNumber(6)">
+            <input type="button" name="" id="" value="*" onclick="setOperator('*')">
+            <input type="button" name="" id="" value="1" onclick="addNumber(1)">
+            <input type="button" name="" id="" value="2" onclick="addNumber(2)">
+            <input type="button" name="" id="" value="3" onclick="addNumber(3)">
+            <input type="button" name="" id="" value="-" onclick="setOperator('-')">
+            <input type="button" name="" id="" value="." onclick="addDecimal()">
+            <input type="button" name="" id="" value="0" onclick="addNumber(0)">
+            <input type="button" name="" id="" value="+" onclick="setOperator('+')">
+            <input class="dauBang" type="button" name="" id="" value="=" onclick="calculate()">
+        </div>
+    </div>
+    <script>
+        var operand1 = '';
+        var operand2 = '';
+        var operator = '';
+        var result = '';
+        var luutru = '';
+        function addNumber(num) {
+            if (operator == '') {
+                operand1 += num;
+                document.getElementById('display').value = operand1;
+                luutru += operand1;
+                document.getElementById('storage').value = luutru;
+            }
+            else {
+                operand2 += num;
+                document.getElementById('display').value = operand2;
+                /*luutru += ' ' + operand2;
+                document.getElementById('storage').value = luutru;*/
+            }
+        }
+        function addDecimal() {
+            if (operator == '') {
+                if (operand1.indexOf('.') == -1) {
+                    operand1 += '.';
+                    document.getElementById('display').value = operand1;
+                    luutru += operand1;
+                    document.getElementById('storage').value = luutru;
+                }
+            }else {
+                if (operand2.indexOf('.') == -1) {
+                    operand2 += '.';
+                    document.getElementById('display').value = operand2;
+                   /* luutru += ' ' + operand2;
+                    document.getElementById('storage').value = luutru;*/
+                }
+            }
+        }
+        function setOperator(op) {
+            if (operator == '') {
+                operator = op;
+                luutru += ' ' + op;
+                document.getElementById('storage').value = luutru;
+            }
+            else {
+                calculate();
+                operator = op;
+            }
+        }
+        function calculate() {
+            var num1 = parseFloat(operand1);
+            var num2 = parseFloat(operand2);
+            switch(operator) {
+                case '+': 
+                    result = num1 + num2;
+                    break;
+                case '-': 
+                    result = num1 - num2;
+                    break;
+                case '*': 
+                    result = num1 * num2;
+                    break;
+                case '/': 
+                    result = num1 / num2;
+                    break;
+            }
+            luutru += ' ' + operand2 + ' =';
+            document.getElementById('storage').value = luutru;
+            document.getElementById('display').value = result;
+            operand1 = result.toString();
+            operand2 = '';
+            operator = '';
+        }
+        function clearDisplay() {
+            operand1 = '';
+            operand2 = '';
+            operator = '';
+            luutru = '';
+            document.getElementById('display').value = '0';
+            document.getElementById('storage').value = '';
+        }
+    </script>
+</body>
+</html>
